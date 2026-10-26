@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Café Barrio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="flex min-h-screen flex-col bg-[#FAF7F2] font-[Arial] text-[#30241D]">
+    <a
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-10 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-[#30241D] focus:ring-2 focus:ring-[#63452F]"
+      href="#contenido"
+    >
+      Saltar al contenido principal
+    </a>
+
+    <header class="border-b border-[#A6AD89]">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-3 px-4 py-4">
+        <a
+          class="font-[Georgia] text-2xl font-bold text-[#63452F] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]"
+          href="index.html"
+        >
+          Café Barrio
+        </a>
+        <nav aria-label="Navegación principal">
+          <ul class="flex flex-wrap gap-x-5 gap-y-2 text-base">
+            <li>
+              <a class="rounded-sm underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a class="rounded-sm underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="menu.html">Menú</a>
+            </li>
+            <li>
+              <a class="rounded-sm underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="order.html">Pedido</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido" class="mx-auto w-full max-w-6xl flex-1 px-4 py-12 md:py-16"></main>
+
+    <footer class="bg-[#63452F] text-[#FAF7F2]">
+      <div class="mx-auto grid max-w-6xl gap-6 px-4 py-8 sm:grid-cols-2">
+        <div>
+          <h2 class="mb-2 font-[Georgia] text-xl">Visítanos</h2>
+          <address class="not-italic">
+            <p>Dirección por definir</p>
+            <p class="mt-1"><span class="font-semibold">Horario:</span> por definir</p>
+          </address>
+        </div>
+        <div class="sm:text-right">
+          <a
+            class="inline-block rounded-sm underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#FAF7F2]"
+            href="order.html"
+          >
+            Hacer un pedido
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
