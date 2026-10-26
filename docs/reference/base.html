@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Café Barrio, una cafetería local para disfrutar de café, té y comida ligera.">
+    <title>Café Barrio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-[#FAF7F2] font-[Arial,sans-serif] text-[#30241D]">
+    <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-10 focus:bg-white focus:px-4 focus:py-2 focus:text-[#30241D] focus:outline-2 focus:outline-[#63452F]" href="#contenido-principal">Saltar al contenido</a>
+
+    <header class="border-b border-[#A6AD89]">
+      <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-5 sm:flex-row sm:items-center sm:justify-between">
+        <a class="font-[Georgia,serif] text-2xl text-[#63452F] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="index.html">Café Barrio</a>
+        <nav aria-label="Navegación principal">
+          <ul class="flex flex-wrap gap-x-6 gap-y-2 sm:justify-end">
+            <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="menu.html">Menú</a></li>
+            <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="order.html">Pedido</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido-principal"></main>
+
+    <footer class="bg-[#63452F] text-white">
+      <div class="mx-auto grid max-w-6xl gap-6 px-4 py-8 sm:grid-cols-3">
+        <p><span class="font-bold">Dirección:</span> [Añadir dirección]</p>
+        <p><span class="font-bold">Horario:</span> [Añadir horario]</p>
+        <p><a class="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="order.html">Solicitar un pedido</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
