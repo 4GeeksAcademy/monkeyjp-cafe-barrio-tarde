@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Café Barrio, una cafetería local para disfrutar de café, té y comida ligera.">
+    <title>Café Barrio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-[#FAF7F2] font-[Arial,sans-serif] text-[#30241D]">
+    <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-10 focus:bg-white focus:px-4 focus:py-2 focus:text-[#30241D] focus:outline-2 focus:outline-[#63452F]" href="#contenido-principal">Saltar al contenido</a>
+
+    <header class="border-b border-[#A6AD89]">
+      <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-5 sm:flex-row sm:items-center sm:justify-between">
+        <a class="font-[Georgia,serif] text-2xl text-[#63452F] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="index.html">Café Barrio</a>
+        <nav aria-label="Navegación principal">
+          <ul class="flex flex-wrap gap-x-6 gap-y-2 sm:justify-end">
+            <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="menu.html">Menú</a></li>
+            <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="order.html">Pedido</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido-principal">
+      <section class="mx-auto max-w-6xl px-4 py-12 md:py-16" aria-labelledby="bienvenida-titulo">
+        <div class="max-w-2xl">
+          <h1 id="bienvenida-titulo" class="font-[Georgia,serif] text-4xl text-[#63452F] md:text-5xl">Bienvenido a Café Barrio</h1>
+          <p class="mt-5 text-base leading-7">Un lugar cercano para disfrutar de un buen café, una taza de té y algo rico para acompañar.</p>
+          <a class="mt-7 inline-flex min-h-11 items-center justify-center rounded-md bg-[#63452F] px-5 py-3 font-bold text-white hover:bg-[#503824] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="menu.html">Descubre el menú</a>
+        </div>
+      </section>
+
+      <section class="bg-white/60" aria-labelledby="destacados-titulo">
+        <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+          <h2 id="destacados-titulo" class="font-[Georgia,serif] text-2xl text-[#63452F] md:text-3xl">Favoritos del barrio</h2>
+          <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <article class="overflow-hidden rounded-xl border border-[#A6AD89]/50 bg-white">
+              <figure>
+                <img class="aspect-[4/3] w-full object-cover" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Café servido en una taza sobre una mesa" loading="lazy">
+                <figcaption class="p-5">
+                  <h3 class="font-[Georgia,serif] text-xl text-[#63452F]">Café con leche</h3>
+                  <p class="mt-2 text-base leading-6">Espresso intenso y leche vaporizada, preparado al momento.</p>
+                  <p class="mt-4 font-bold">2,50 €</p>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="overflow-hidden rounded-xl border border-[#A6AD89]/50 bg-white">
+              <figure>
+                <img class="aspect-[4/3] w-full object-cover" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Taza de café servida para disfrutar" loading="lazy">
+                <figcaption class="p-5">
+                  <h3 class="font-[Georgia,serif] text-xl text-[#63452F]">Café americano</h3>
+                  <p class="mt-2 text-base leading-6">Espresso de sabor equilibrado, servido caliente.</p>
+                  <p class="mt-4 font-bold">2,80 €</p>
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "CafeOrCoffeeShop",
+          "name": "Café Barrio",
+          "description": "Una cafetería local para disfrutar de café, té y comida ligera.",
+          "hasMenu": {
+            "@type": "Menu",
+            "name": "Favoritos del barrio",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Café con leche",
+                "description": "Espresso intenso y leche vaporizada, preparado al momento.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "2.50",
+                  "priceCurrency": "EUR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Café americano",
+                "description": "Espresso de sabor equilibrado, servido caliente.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "2.80",
+                  "priceCurrency": "EUR"
+                }
+              }
+            ]
+          }
+        }
+      </script>
+    </main>
+
+    <footer class="bg-[#63452F] text-white">
+      <div class="mx-auto grid max-w-6xl gap-6 px-4 py-8 sm:grid-cols-3">
+        <p><span class="font-bold">Dirección:</span> [Añadir dirección]</p>
+        <p><span class="font-bold">Horario:</span> [Añadir horario]</p>
+        <p><a class="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="order.html">Solicitar un pedido</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
