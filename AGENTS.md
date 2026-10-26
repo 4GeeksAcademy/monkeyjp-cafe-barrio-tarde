@@ -33,3 +33,14 @@ Antes de implementar, consultar:
 - Usar ramas feature/.
 - No trabajar directamente sobre main.
 - No realizar commits, push ni merges sin confirmación.
+
+
+## Diseño compartido
+
+- DESIGN.md define las reglas visuales del proyecto.
+- docs/reference/base.html es la plantilla HTML oficial.
+- Toda página nueva debe partir de esa plantilla.
+- Mantener Tailwind, navbar y footer sin modificaciones.
+- Añadir el contenido específico dentro de main.
+- No crear otro diseño o configuración de Tailwind.
+- No modificar base.html sin autorización.
