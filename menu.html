@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Café Barrio, una cafetería local para disfrutar de café, té y comida ligera.">
+    <title>Menú | Café Barrio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-[#FAF7F2] font-[Arial,sans-serif] text-[#30241D]">
+    <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-10 focus:bg-white focus:px-4 focus:py-2 focus:text-[#30241D] focus:outline-2 focus:outline-[#63452F]" href="#contenido-principal">Saltar al contenido</a>
+
+    <header class="border-b border-[#A6AD89]">
+      <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-5 sm:flex-row sm:items-center sm:justify-between">
+        <a class="font-[Georgia,serif] text-2xl text-[#63452F] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="index.html">Café Barrio</a>
+        <nav aria-label="Navegación principal">
+          <ul class="flex flex-wrap gap-x-6 gap-y-2 sm:justify-end">
+            <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="menu.html">Menú</a></li>
+            <li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#63452F]" href="order.html">Pedido</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido-principal">
+      <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+        <h1 class="font-[Georgia,serif] text-4xl text-[#63452F] md:text-5xl">Menú</h1>
+        <ul aria-label="Categorías del menú" class="mt-6 flex flex-wrap gap-3 text-base">
+          <li class="rounded-xl border border-[#A6AD89] bg-white px-4 py-2">Café</li>
+          <li class="rounded-xl border border-[#A6AD89] bg-white px-4 py-2">Té</li>
+          <li class="rounded-xl border border-[#A6AD89] bg-white px-4 py-2">Comida</li>
+        </ul>
+
+        <section aria-labelledby="categoria-cafe" class="py-12 md:py-16">
+          <h2 id="categoria-cafe" class="font-[Georgia,serif] text-2xl text-[#63452F] md:text-3xl">Café</h2>
+          <div class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <article itemscope itemtype="https://schema.org/MenuItem" class="min-w-0 overflow-hidden rounded-xl border border-[#A6AD89] bg-white">
+              <img src="https://placehold.co/600x400/FAF7F2/63452F?text=Espresso" alt="Imagen provisional" width="600" height="400" class="aspect-[3/2] w-full object-cover">
+              <div class="p-5">
+                <h3 itemprop="name" class="break-words font-[Georgia,serif] text-xl">Espresso</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 text-base"><span itemprop="price" content="1.80">1,80</span> <span itemprop="priceCurrency" content="EUR">€</span></p>
+              </div>
+            </article>
+            <article itemscope itemtype="https://schema.org/MenuItem" class="min-w-0 overflow-hidden rounded-xl border border-[#A6AD89] bg-white">
+              <img src="https://placehold.co/600x400/FAF7F2/63452F?text=Americano" alt="Imagen provisional" width="600" height="400" class="aspect-[3/2] w-full object-cover">
+              <div class="p-5">
+                <h3 itemprop="name" class="break-words font-[Georgia,serif] text-xl">Americano</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 text-base"><span itemprop="price" content="2.20">2,20</span> <span itemprop="priceCurrency" content="EUR">€</span></p>
+              </div>
+            </article>
+            <article itemscope itemtype="https://schema.org/MenuItem" class="min-w-0 overflow-hidden rounded-xl border border-[#A6AD89] bg-white">
+              <img src="https://placehold.co/600x400/FAF7F2/63452F?text=Cafe+con+leche" alt="Imagen provisional" width="600" height="400" class="aspect-[3/2] w-full object-cover">
+              <div class="p-5">
+                <h3 itemprop="name" class="break-words font-[Georgia,serif] text-xl">Café con leche</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 text-base"><span itemprop="price" content="2.60">2,60</span> <span itemprop="priceCurrency" content="EUR">€</span></p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section aria-labelledby="categoria-te" class="py-12 md:py-16">
+          <h2 id="categoria-te" class="font-[Georgia,serif] text-2xl text-[#63452F] md:text-3xl">Té</h2>
+          <div class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <article itemscope itemtype="https://schema.org/MenuItem" class="min-w-0 overflow-hidden rounded-xl border border-[#A6AD89] bg-white">
+              <img src="https://placehold.co/600x400/FAF7F2/63452F?text=Te+verde" alt="Imagen provisional" width="600" height="400" loading="lazy" class="aspect-[3/2] w-full object-cover">
+              <div class="p-5">
+                <h3 itemprop="name" class="break-words font-[Georgia,serif] text-xl">Té verde</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 text-base"><span itemprop="price" content="2.40">2,40</span> <span itemprop="priceCurrency" content="EUR">€</span></p>
+              </div>
+            </article>
+            <article itemscope itemtype="https://schema.org/MenuItem" class="min-w-0 overflow-hidden rounded-xl border border-[#A6AD89] bg-white">
+              <img src="https://placehold.co/600x400/FAF7F2/63452F?text=Te+negro" alt="Imagen provisional" width="600" height="400" loading="lazy" class="aspect-[3/2] w-full object-cover">
+              <div class="p-5">
+                <h3 itemprop="name" class="break-words font-[Georgia,serif] text-xl">Té negro</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 text-base"><span itemprop="price" content="2.40">2,40</span> <span itemprop="priceCurrency" content="EUR">€</span></p>
+              </div>
+            </article>
+            <article itemscope itemtype="https://schema.org/MenuItem" class="min-w-0 overflow-hidden rounded-xl border border-[#A6AD89] bg-white">
+              <img src="https://placehold.co/600x400/FAF7F2/63452F?text=Te+chai" alt="Imagen provisional" width="600" height="400" loading="lazy" class="aspect-[3/2] w-full object-cover">
+              <div class="p-5">
+                <h3 itemprop="name" class="break-words font-[Georgia,serif] text-xl">Té chai</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 text-base"><span itemprop="price" content="2.90">2,90</span> <span itemprop="priceCurrency" content="EUR">€</span></p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section aria-labelledby="categoria-comida" class="py-12 md:py-16">
+          <h2 id="categoria-comida" class="font-[Georgia,serif] text-2xl text-[#63452F] md:text-3xl">Comida</h2>
+          <div class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <article itemscope itemtype="https://schema.org/MenuItem" class="min-w-0 overflow-hidden rounded-xl border border-[#A6AD89] bg-white">
+              <img src="https://placehold.co/600x400/FAF7F2/63452F?text=Tostada+con+tomate" alt="Imagen provisional" width="600" height="400" loading="lazy" class="aspect-[3/2] w-full object-cover">
+              <div class="p-5">
+                <h3 itemprop="name" class="break-words font-[Georgia,serif] text-xl">Tostada con tomate</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 text-base"><span itemprop="price" content="3.50">3,50</span> <span itemprop="priceCurrency" content="EUR">€</span></p>
+              </div>
+            </article>
+            <article itemscope itemtype="https://schema.org/MenuItem" class="min-w-0 overflow-hidden rounded-xl border border-[#A6AD89] bg-white">
+              <img src="https://placehold.co/600x400/FAF7F2/63452F?text=Bocadillo+vegetal" alt="Imagen provisional" width="600" height="400" loading="lazy" class="aspect-[3/2] w-full object-cover">
+              <div class="p-5">
+                <h3 itemprop="name" class="break-words font-[Georgia,serif] text-xl">Bocadillo vegetal</h3>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer" class="mt-2 text-base"><span itemprop="price" content="4.50">4,50</span> <span itemprop="priceCurrency" content="EUR">€</span></p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-[#63452F] text-white">
+      <div class="mx-auto grid max-w-6xl gap-6 px-4 py-8 sm:grid-cols-3">
+        <p><span class="font-bold">Dirección:</span> [Añadir dirección]</p>
+        <p><span class="font-bold">Horario:</span> [Añadir horario]</p>
+        <p><a class="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="order.html">Solicitar un pedido</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
